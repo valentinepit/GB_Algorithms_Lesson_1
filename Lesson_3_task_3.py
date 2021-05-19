@@ -10,6 +10,10 @@ array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
 
 
 def min_max():
+    '''
+    Проход по массиву с поиском минимального и максимального элементов и возвращение их индексов
+    :return: index_min, index_max
+    '''
     index_min = index_max = 0
     min_el = max_el = array[0]
     for i in range(1, len(array)):
